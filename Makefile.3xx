@@ -1,0 +1,24 @@
+TARGET = wificontroller
+PSPSDK = $(shell psp-config --pspsdk-path)
+PSPBIN = $(shell psp-config --psp-prefix)/bin
+OBJS = main.o
+
+PSP_FW_VERSION = 303
+
+INCDIR =
+CFLAGS = -O3 -G0 -Wall -DPSPFW3
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CFLAGS) -c
+
+LIBDIR = ./libj
+LDFLAGS =
+LIBS += -lpspwlan -lpsppower
+
+BUILD_PRX = 1
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE  = WiFiController
+PSP_EBOOT_ICON = ICON0.PNG
+
+
+include $(PSPSDK)/lib/build.mak

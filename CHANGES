@@ -1,0 +1,31 @@
+v0.4.4)
+  * Fixed so it will work under 3.40 kernel and higher.
+  * Added a little bit more detail to the connection screen.
+
+v0.4.3)
+  * Renamed WiFiController.exe to WiFiServer.exe so it won't be confused for
+    the actual PSP application itself.
+  * Added the ability to act as up to 4 separate controllers.
+
+v0.4.2)
+  * Rewrote some functions to clean up code more.
+  * Shortened all message displays by 1 second.
+
+v0.4.1)
+  * Fixed configuration selection menu.
+  * Changed invert combo to L+R+SELECT.
+  * Renamed SocketTest.exe to WiFiController.exe
+
+v0.4)
+  * Cleaned up code some more and removed old header files not used anymore.
+  * Added ability to select which WLAN configuration to use.
+  * L+R+START now inverts analog Y in case some games don't support it.
+  * Probably new bugs introduced.  :)
+
+v0.3)
+  * Cleaned up and added more detailed instructions.
+  * Fixed up on-screen display some.
+  * Added some more detailed battery information.
+  * Cleaned up the connection code some.
+  * Moved some text strings to a new file.
+  * Cleaned up code overall.
